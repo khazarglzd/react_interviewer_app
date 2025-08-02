@@ -1,0 +1,53 @@
+/* Layout.css */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #20232a; /* React dark gray */
+  color: #ffffff;
+}
+
+.layout-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #20232a; /* React dark background */
+}
+
+.layout-content {
+  background-color: #282c34; /* Slightly lighter gray */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Modal-like animation for child components */
+.layout-content > * {
+  animation: fadeInUp 0.3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Accent turquoise (React logo color) usage sample */
+a,
+button {
+  color: #61dafb;
+}
+
+button:hover {
+  color: #21a1f1;
+  cursor: pointer;
+}
