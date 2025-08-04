@@ -35,7 +35,7 @@ const Login = () => {
                 />
                 {error && <p className="error">{error}</p>}
                 <button type="submit" className="button">
-                    Start
+                    Next
                 </button>
             </form>
         </div>

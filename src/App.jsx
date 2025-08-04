@@ -1,15 +1,18 @@
-import React from 'react'
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Layout from './components/Layout';
+import Login from './components/Login';
+import LevelSelect from './components/LevelSelect';
 
-import Layout from './components/Layout'
-
-
-const App = () => {
+function App() {
   return (
-    <div>
-      <Layout>
-      </Layout>
-    </div>
-  )
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/level" element={<LevelSelect />} />
+      </Routes>
+    </Layout>
+  );
 }
 
-export default App
+export default App;
