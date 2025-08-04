@@ -11,7 +11,7 @@
   padding: 48px 48px;
   border-radius: 12px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
-  width: 420px;
+  width: 480px;
   max-width: 90vw;
   box-sizing: border-box;
 }
@@ -66,8 +66,4 @@
   cursor: pointer;
   font-weight: 600;
   transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #21a1f1;
 }

@@ -8,21 +8,11 @@ body {
 }
 
 .layout-container {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #20232a; /* React dark background */
-}
-
-.layout-content {
-  background-color: #282c34; /* Slightly lighter gray */
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  width: 100%;
-  max-width: 600px;
-  transition: all 0.3s ease-in-out;
+  background-color: #20232a; /* React koyu grisi */
 }
 
 /* Modal-like animation for child components */

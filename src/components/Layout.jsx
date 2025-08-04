@@ -1,14 +1,14 @@
-import React from 'react'
-import Login from './Login'
+import React from 'react';
+import "../styles/Layout.css"
 
-const Layout = () => {
+const Layout = ({ children }) => {
     return (
         <div className="layout-container">
             <div className="layout-content">
-                <Login />
+                {children}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Layout
+export default Layout;

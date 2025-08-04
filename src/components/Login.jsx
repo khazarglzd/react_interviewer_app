@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
 
 const Login = () => {
     const [name, setName] = useState('');
     const [error, setError] = useState('');
-
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -12,9 +13,9 @@ const Login = () => {
             setError('Name is required');
             return;
         }
-        setError('');
-        setUserName(name.trim());
 
+        setError('');
+        navigate('/level');
     };
 
     return (
