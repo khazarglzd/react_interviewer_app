@@ -1,0 +1,69 @@
+.stepper-container {
+  background-color: #20232a;
+  color: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stepper-title {
+  font-size: 22px;
+  margin-bottom: 24px;
+  color: #61dafb;
+}
+
+.stepper-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.stepper-box {
+  background-color: #282c34;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.stepper-label {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.stepper-slider {
+  width: 100%;
+}
+
+.stepper-value {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #90caf9;
+}
+
+.stepper-total {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.stepper-next {
+  background-color: #61dafb;
+  color: #20232a;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.stepper-next:hover {
+  background-color: #4dc8ea;
+}
+
+.stepper-next:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
