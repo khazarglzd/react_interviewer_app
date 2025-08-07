@@ -13,7 +13,7 @@ const LevelSelect = ({ onNext }) => {
 
     return (
         <div className="level-container">
-            <h2 className="level-title">Select your level</h2>
+            <h2 className="level-title">Select Your Level</h2>
 
             <div className="level-options">
                 {levels.map(level => (

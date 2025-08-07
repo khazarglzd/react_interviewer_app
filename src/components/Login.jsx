@@ -23,7 +23,7 @@ const Login = () => {
             <form onSubmit={handleSubmit} className="form">
                 <h1 className="title">Welcome to React Interviewer</h1>
                 <label htmlFor="name" className="label">
-                    Enter your name:
+                    Enter Your Name:
                 </label>
                 <input
                     id="name"
