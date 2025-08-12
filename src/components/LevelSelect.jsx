@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/LevelSelect.css';
 
 const levels = ['Junior', 'Mid', 'Senior'];
 
-const LevelSelect = ({ onNext }) => {
+const LevelSelect = () => {
     const [selectedLevel, setSelectedLevel] = useState('');
+    const navigate = useNavigate();
 
     const handleNext = () => {
         if (!selectedLevel) return alert('Please select a level.');
-        onNext(selectedLevel);
+        navigate('/stepper', { state: { level: selectedLevel } });
     };
 
     return (

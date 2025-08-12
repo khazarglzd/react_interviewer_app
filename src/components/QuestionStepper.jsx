@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './QuestionStepper.css';
+import '../styles/QuestionStepper.css';
 
 const MAX_TOTAL = 20;
 
@@ -14,8 +14,9 @@ const QuestionStepper = ({ onNext }) => {
     const total = Object.values(counts).reduce((a, b) => a + b, 0);
 
     const handleChange = (key, value) => {
-        const newCounts = { ...counts, [key]: value };
+        if (value < 0 || value > 20) return;
 
+        const newCounts = { ...counts, [key]: value };
         const newTotal = Object.values(newCounts).reduce((a, b) => a + b, 0);
         if (newTotal > MAX_TOTAL) return;
 
@@ -24,24 +25,48 @@ const QuestionStepper = ({ onNext }) => {
 
     return (
         <div className="stepper-container">
-            <h2 className="stepper-title">Adjust Questions (Total 20 Questions)</h2>
+            <h2 className="stepper-title">Adjust Your Interview Questions</h2>
+
             <div className="stepper-grid">
                 {Object.entries(counts).map(([key, value]) => (
                     <div className="stepper-box" key={key}>
                         <h3 className="stepper-label">{key.toUpperCase()}</h3>
-                        <input
-                            type="range"
-                            min="0"
-                            max="20"
-                            value={value}
-                            onChange={(e) => handleChange(key, parseInt(e.target.value))}
-                            className="stepper-slider"
-                        />
+                        <div className="stepper-control">
+                            <button
+                                className="stepper-btn"
+                                onClick={() => handleChange(key, value - 1)}
+                            >
+                                -
+                            </button>
+                            <input
+                                type="range"
+                                min="0"
+                                max="20"
+                                value={value}
+                                onChange={(e) => handleChange(key, parseInt(e.target.value))}
+                                className="stepper-slider"
+                            />
+                            <button
+                                className="stepper-btn"
+                                onClick={() => handleChange(key, value + 1)}
+                            >
+                                +
+                            </button>
+                        </div>
                         <div className="stepper-value">{value} question</div>
                     </div>
                 ))}
             </div>
-            <div className="stepper-total">Total: {total} / 20</div>
+
+            <div className="stepper-total">Total Questions:  {total} / 20</div>
+
+
+            <div className="stepper-summary">
+                {Object.entries(counts)
+                    .map(([key, value]) => `${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}`)
+                    .join(', ')}
+            </div>
+
             <button
                 className="stepper-next"
                 disabled={total !== 20}

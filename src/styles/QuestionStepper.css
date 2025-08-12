@@ -67,3 +67,40 @@
   background-color: gray;
   cursor: not-allowed;
 }
+
+.stepper-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stepper-btn {
+  color: #20232a;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background-color: #61dafb;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.stepper-btn:hover {
+  background-color: #d1d5db;
+}
+
+.stepper-slider {
+  flex: 1;
+  cursor: pointer;
+}
+
+.stepper-summary {
+  margin: 20px 0 20px 0;
+  font-size: 18px;
+  color: #61dafb;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
