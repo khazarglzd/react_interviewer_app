@@ -5,12 +5,17 @@ const initialState = {
     currentIndex: 0,
     answers: {},
     status: "notStarted",
+    counts: {}
 };
 
 const interviewSlice = createSlice({
     name: "interview",
     initialState,
     reducers: {
+        startInterview: (state, action) => {
+            state.counts = action.payload;
+            state.status = "inProgress";
+        },
         setQuestions: (state, action) => {
             state.questions = action.payload;
             state.currentIndex = 0;
@@ -44,6 +49,7 @@ const interviewSlice = createSlice({
 });
 
 export const {
+    startInterview,
     setQuestions,
     setAnswer,
     nextQuestion,

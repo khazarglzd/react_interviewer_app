@@ -6,7 +6,7 @@ import {
     prevQuestion,
     passQuestion,
     finishInterview,
-} from "../store/interviewSlice";
+} from "../redux/interviewSlice";
 import "../styles/QuestionCard.css"
 
 const QuestionCard = () => {

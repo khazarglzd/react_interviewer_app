@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import interviewReducer from "./interviewSlice";
 
-export const store = configureStore({
+const store = configureStore({
     reducer: {
         interview: interviewReducer,
     },
 });
+
+export default store;
