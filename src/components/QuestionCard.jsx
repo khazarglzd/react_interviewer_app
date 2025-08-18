@@ -7,7 +7,7 @@ import {
     passQuestion,
     finishInterview,
 } from "../store/interviewSlice";
-import "./QuestionCard.css";
+import "../styles/QuestionCard.css"
 
 const QuestionCard = () => {
     const dispatch = useDispatch();

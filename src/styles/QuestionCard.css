@@ -1,0 +1,107 @@
+/* Container */
+.questioncard {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.questioncard-empty {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Title */
+.questioncard-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Options */
+.questioncard-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.questioncard-option {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  background: #f9f9f9;
+  transition: background 0.2s, border-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.questioncard-option input {
+  display: none;
+}
+
+.questioncard-option:hover {
+  background: #f1f1f1;
+  border-color: #aaa;
+}
+
+.questioncard-option.selected {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* Buttons */
+.questioncard-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Back button */
+.btn.back {
+  background: #6b7280;
+  color: white;
+}
+.btn.back:disabled {
+  background: #d1d5db;
+  color: #666;
+  cursor: not-allowed;
+}
+.btn.back:hover:not(:disabled) {
+  background: #4b5563;
+}
+
+/* Pass button */
+.btn.pass {
+  background: #f59e0b;
+  color: white;
+}
+.btn.pass:hover {
+  background: #d97706;
+}
+
+/* Next/Finish button */
+.btn.next {
+  background: #2563eb;
+  color: white;
+}
+.btn.next:hover {
+  background: #1e40af;
+}
