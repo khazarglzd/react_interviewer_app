@@ -30,8 +30,8 @@ const QuestionStepper = () => {
     };
 
     const handleStart = () => {
-        dispatch(startInterview(counts));   // seçilen sayıları Redux’a gönder
-        navigate('/interview');             // interview sayfasına yönlendir
+        dispatch(startInterview({ level: "junior", counts }));
+        navigate('/interview');
     };
 
     return (
@@ -54,7 +54,9 @@ const QuestionStepper = () => {
                                 min="0"
                                 max="20"
                                 value={value}
-                                onChange={(e) => handleChange(key, parseInt(e.target.value))}
+                                onChange={(e) =>
+                                    handleChange(key, parseInt(e.target.value))
+                                }
                                 className="stepper-slider"
                             />
                             <button
@@ -69,17 +71,20 @@ const QuestionStepper = () => {
                 ))}
             </div>
 
-            <div className="stepper-total">Total Questions: {total} / 20</div>
+            <div className="stepper-total">Total Questions: {total} / {MAX_TOTAL}</div>
 
             <div className="stepper-summary">
                 {Object.entries(counts)
-                    .map(([key, value]) => `${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}`)
+                    .map(
+                        ([key, value]) =>
+                            `${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}`
+                    )
                     .join(', ')}
             </div>
 
             <button
                 className="stepper-next"
-                disabled={total !== 20}
+                disabled={total !== MAX_TOTAL}
                 onClick={handleStart}
             >
                 Start Interview

@@ -1,4 +1,4 @@
-export const questionBank = {
+const questionBank = {
     css: {
         junior: [
             {
@@ -2048,3 +2048,4 @@ export const questionBank = {
             }]
     }
 }
+export default questionBank;
