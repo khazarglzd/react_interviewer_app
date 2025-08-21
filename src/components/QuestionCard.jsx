@@ -9,6 +9,13 @@ import {
 } from "../redux/interviewSlice";
 import "../styles/QuestionCard.css"
 
+const categoryColors = {
+    css: "#136DB0",
+    react: "#61DBFB",
+    javascript: "#F7DF1E",
+    principles: "#8E44AD",
+};
+
 const QuestionCard = () => {
     const dispatch = useDispatch();
     const { questions, currentIndex, answers, status } = useSelector(
@@ -42,19 +49,27 @@ const QuestionCard = () => {
         dispatch(passQuestion());
     };
 
+
+    const color = categoryColors[question.category] || "#136DB0";
+    const textColor = question.category === "javascript" ? "#000" : "#fff"; // JS için siyah yazı okunaklı
+
+    console.log("CATEGORY:", question.category);
     return (
         <div className="questioncard">
             <h2 className="questioncard-title">
                 Q{currentIndex + 1}. {question.question}
             </h2>
 
-
             <div className="questioncard-options">
                 {question.options.map((option, i) => (
                     <label
                         key={i}
-                        className={`questioncard-option ${selectedAnswer === option ? "selected" : ""
-                            }`}
+                        className={`questioncard-option ${selectedAnswer === option ? "selected" : ""}`}
+                        style={{
+                            backgroundColor: selectedAnswer === option ? color : "transparent",
+                            border: `2px solid ${color}`,
+                            color: selectedAnswer === option ? textColor : color,
+                        }}
                     >
                         <input
                             type="radio"
@@ -67,7 +82,6 @@ const QuestionCard = () => {
                     </label>
                 ))}
             </div>
-
 
             <div className="questioncard-buttons">
                 <button

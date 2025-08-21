@@ -1,4 +1,4 @@
-/* Container */
+/* ---------------- Container ---------------- */
 .questioncard {
   background: #fff;
   border-radius: 16px;
@@ -16,7 +16,7 @@
   color: #666;
 }
 
-/* Title */
+/* ---------------- Title ---------------- */
 .questioncard-title {
   font-size: 20px;
   font-weight: bold;
@@ -24,7 +24,7 @@
   margin-bottom: 20px;
 }
 
-/* Options */
+/* ---------------- Options ---------------- */
 .questioncard-options {
   display: flex;
   flex-direction: column;
@@ -32,33 +32,63 @@
 }
 
 .questioncard-option {
-  border: 1px solid #ccc;
   border-radius: 10px;
   padding: 12px 16px;
   cursor: pointer;
-  background: #3a3f47;
-  transition: background 0.2s, border-color 0.2s;
+  transition: background 0.2s;
   display: flex;
   align-items: center;
   gap: 8px;
+  color: white;
+  /* border ve background burada yok */
 }
 
 .questioncard-option input {
   display: none;
 }
 
-.questioncard-option:hover {
-  background: #f1f1f1;
-  border-color: #aaa;
+/* ---------------- Category specific option colors ---------------- */
+/* CSS */
+.css-option {
+  background: #136db0;
+}
+.css-option:hover,
+.css-option.selected {
+  background: #0e4f7d;
 }
 
-.questioncard-option.selected {
-  background: #2563eb;
+/* React */
+.react-option {
+  background: #61dafb;
+  color: black;
+}
+.react-option:hover,
+.react-option.selected {
+  background: #21a1f1;
   color: white;
-  border-color: #2563eb;
 }
 
-/* Buttons */
+/* JavaScript */
+.javascript-option {
+  background: #f7df1e;
+  color: black;
+}
+.javascript-option:hover,
+.javascript-option.selected {
+  background: #e5c700;
+  color: black;
+}
+
+/* Software Principles */
+.principles-option {
+  background: #8b5cf6;
+}
+.principles-option:hover,
+.principles-option.selected {
+  background: #6d28d9;
+}
+
+/* ---------------- Buttons ---------------- */
 .questioncard-buttons {
   display: flex;
   justify-content: space-between;

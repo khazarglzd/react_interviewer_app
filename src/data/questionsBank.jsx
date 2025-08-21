@@ -4,92 +4,110 @@ const questionBank = {
             {
                 question: "Which CSS property is used to change the text color of an element?",
                 options: ["color", "font-color", "text-color", "foreground-color"],
-                answer: "color"
+                answer: "color",
+                category: "css"
             },
             {
                 question: "Which CSS property controls the size of text?",
                 options: ["font-style", "font-size", "text-size", "size"],
-                answer: "font-size"
+                answer: "font-size",
+                category: "css"
             },
             {
                 question: "Which property is used to change the background color of an element?",
                 options: ["background", "background-color", "color", "bgcolor"],
-                answer: "background-color"
+                answer: "background-color",
+                category: "css"
             },
             {
                 question: "How do you make text bold in CSS?",
                 options: ["font-weight: bold", "text-style: bold", "font-bold", "weight: bold"],
-                answer: "font-weight: bold"
+                answer: "font-weight: bold",
+                category: "css"
             },
             {
                 question: "Which CSS property controls the space between lines of text?",
                 options: ["letter-spacing", "line-height", "word-spacing", "text-spacing"],
-                answer: "line-height"
+                answer: "line-height",
+                category: "css"
             },
             {
                 question: "Which CSS property is used to set the space between letters?",
                 options: ["letter-spacing", "line-height", "spacing", "text-indent"],
-                answer: "letter-spacing"
+                answer: "letter-spacing",
+                category: "css"
             },
             {
                 question: "What is the default position value of an HTML element in CSS?",
                 options: ["absolute", "relative", "static", "fixed"],
-                answer: "static"
+                answer: "static",
+                category: "css"
             },
             {
                 question: "Which property is used to create space inside an element’s border?",
                 options: ["margin", "padding", "spacing", "border-spacing"],
-                answer: "padding"
+                answer: "padding",
+                category: "css"
             },
             {
                 question: "Which CSS property is used to create space outside an element’s border?",
                 options: ["margin", "padding", "spacing", "border-spacing"],
-                answer: "margin"
+                answer: "margin",
+                category: "css"
             },
             {
                 question: "Which CSS unit is relative to the root element's font size?",
                 options: ["em", "px", "rem", "%"],
-                answer: "rem"
+                answer: "rem",
+                category: "css"
             },
             {
                 question: "Which CSS property is used to set the style of the list item marker?",
                 options: ["list-style-type", "list-marker", "marker-style", "list-type"],
-                answer: "list-style-type"
+                answer: "list-style-type",
+                category: "css"
             },
             {
                 question: "Which CSS property makes an element completely hidden and removes it from the layout?",
                 options: ["visibility: hidden", "display: none", "opacity: 0", "hide: true"],
-                answer: "display: none"
+                answer: "display: none",
+                category: "css"
             },
             {
                 question: "Which property is used to make rounded corners in CSS?",
                 options: ["corner-radius", "border-style", "border-radius", "round-corner"],
-                answer: "border-radius"
+                answer: "border-radius",
+                category: "css"
             },
             {
                 question: "Which CSS property specifies the stack order of elements?",
                 options: ["order", "stack", "z-index", "index"],
-                answer: "z-index"
+                answer: "z-index",
+                category: "css"
             },
             {
                 question: "Which CSS property is used to set an image as the background?",
                 options: ["background", "background-image", "image-background", "bg-image"],
-                answer: "background-image"
+                answer: "background-image",
+                category: "css"
             },
             {
                 question: "Which property controls the transparency of an element?",
                 options: ["visibility", "opacity", "alpha", "transparent"],
-                answer: "opacity"
+                answer: "opacity",
+                category: "css"
             },
             {
                 question: "Which value of the position property keeps an element in the same place even when scrolling?",
                 options: ["absolute", "relative", "fixed", "sticky"],
-                answer: "fixed"
+                answer: "fixed",
+                category: "css"
             },
             {
                 question: "Which CSS property is used to change the typeface of text?",
                 options: ["font", "font-family", "typeface", "font-style"],
-                answer: "font-family"
+                answer: "font-family",
+                category: "css"
             },
             {
                 question: "What does CSS stand for?",
@@ -99,12 +117,14 @@ const questionBank = {
                     "Cascading Style Sheets",
                     "Colorful Style Sheets"
                 ],
-                answer: "Cascading Style Sheets"
+                answer: "Cascading Style Sheets",
+                category: "css"
             },
             {
                 question: "Which CSS property is used to control how text is aligned inside an element?",
                 options: ["text-style", "text-align", "align-text", "horizontal-align"],
-                answer: "text-align"
+                answer: "text-align",
+                category: "css"
             }
 
         ],
@@ -112,7 +132,8 @@ const questionBank = {
             {
                 question: "Which CSS property controls the stacking order of elements?",
                 options: ["z-index", "position", "order", "stack"],
-                answer: "z-index"
+                answer: "z-index",
+                category: "css"
             },
             {
                 question: "What is the difference between `relative` and `absolute` positioning?",
@@ -122,7 +143,8 @@ const questionBank = {
                     "`relative` fixes an element; `absolute` scrolls with the page",
                     "`relative` removes the element from flow; `absolute` does not"
                 ],
-                answer: "`relative` positions an element relative to itself; `absolute` positions it relative to the nearest positioned ancestor"
+                answer: "`relative` positions an element relative to itself; `absolute` positions it relative to the nearest positioned ancestor",
+                category: "css"
             },
             {
                 question: "What does the `flex-grow` property do?",
@@ -132,7 +154,8 @@ const questionBank = {
                     "Specifies the order of flex items",
                     "Specifies the gap between flex items"
                 ],
-                answer: "Specifies how much a flex item will grow relative to others"
+                answer: "Specifies how much a flex item will grow relative to others",
+                category: "css"
             },
             {
                 question: "What is the difference between `em` and `rem` units in CSS?",
@@ -142,22 +165,26 @@ const questionBank = {
                     "`em` is always 16px; `rem` changes with viewport size",
                     "`em` changes with viewport; `rem` is fixed"
                 ],
-                answer: "`em` is relative to the parent element's font size; `rem` is relative to the root element's font size"
+                answer: "`em` is relative to the parent element's font size; `rem` is relative to the root element's font size",
+                category: "css"
             },
             {
                 question: "Which CSS property is used to create a grid layout?",
                 options: ["display", "grid-template-columns", "grid", "grid-area"],
-                answer: "display"
+                answer: "display",
+                category: "css"
             },
             {
                 question: "What is the default value of the `position` property?",
                 options: ["static", "relative", "absolute", "inherit"],
-                answer: "static"
+                answer: "static",
+                category: "css"
             },
             {
                 question: "Which pseudo-class selects an element when the mouse pointer is over it?",
                 options: [":hover", ":focus", ":active", ":visited"],
-                answer: ":hover"
+                answer: ":hover",
+                category: "css"
             },
             {
                 question: "What is the purpose of the `clip-path` property?",
@@ -167,7 +194,8 @@ const questionBank = {
                     "To add a shadow to an element",
                     "To round the corners of an element"
                 ],
-                answer: "To define a visible portion of an element"
+                answer: "To define a visible portion of an element",
+                category: "css"
             },
             {
                 question: "What does the `object-fit` property control?",
@@ -177,12 +205,14 @@ const questionBank = {
                     "The object's margin size",
                     "The object's padding size"
                 ],
-                answer: "How content of replaced elements like images or videos should be resized"
+                answer: "How content of replaced elements like images or videos should be resized",
+                category: "css"
             },
             {
                 question: "Which value of the `display` property makes an element a flex container?",
                 options: ["flex", "block", "inline", "grid"],
-                answer: "flex"
+                answer: "flex",
+                category: "css"
             },
             {
                 question: "What does the `transition` property do?",
@@ -192,7 +222,8 @@ const questionBank = {
                     "Transforms an element's shape",
                     "Adds delay to page loading"
                 ],
-                answer: "Animates property changes over a given duration"
+                answer: "Animates property changes over a given duration",
+                category: "css"
             },
             {
                 question: "What is the difference between `inline` and `inline-block` elements?",
@@ -202,7 +233,8 @@ const questionBank = {
                     "They are exactly the same",
                     "`inline` forces block-level styling"
                 ],
-                answer: "`inline-block` allows setting width/height; `inline` does not"
+                answer: "`inline-block` allows setting width/height; `inline` does not",
+                category: "css"
             },
             {
                 question: "What does the `overflow: hidden` property do?",
@@ -212,12 +244,14 @@ const questionBank = {
                     "Adds a scrollbar to the element",
                     "Prevents element from loading"
                 ],
-                answer: "Clips content that overflows an element's box"
+                answer: "Clips content that overflows an element's box",
+                category: "css"
             },
             {
                 question: "Which CSS property sets the space between lines of text?",
                 options: ["line-height", "letter-spacing", "word-spacing", "spacing"],
-                answer: "line-height"
+                answer: "line-height",
+                category: "css"
             },
             {
                 question: "What is the purpose of `min-width` in responsive design?",
@@ -227,7 +261,8 @@ const questionBank = {
                     "To set the default width of an element",
                     "To make an element full width"
                 ],
-                answer: "To set the smallest width an element can be"
+                answer: "To set the smallest width an element can be",
+                category: "css"
             },
             {
                 question: "What does the `calc()` function in CSS allow you to do?",
@@ -237,12 +272,14 @@ const questionBank = {
                     "Perform arithmetic in HTML",
                     "Automatically adjust image sizes"
                 ],
-                answer: "Perform calculations to determine CSS property values"
+                answer: "Perform calculations to determine CSS property values",
+                category: "css"
             },
             {
                 question: "Which property controls the alignment of flex items along the main axis?",
                 options: ["justify-content", "align-items", "align-content", "flex-wrap"],
-                answer: "justify-content"
+                answer: "justify-content",
+                category: "css"
             },
             {
                 question: "What is the difference between `absolute` and `fixed` positioning?",
@@ -252,7 +289,8 @@ const questionBank = {
                     "They behave the same",
                     "`fixed` moves with scroll; `absolute` does not"
                 ],
-                answer: "`fixed` positions relative to the viewport; `absolute` positions relative to the nearest positioned ancestor"
+                answer: "`fixed` positions relative to the viewport; `absolute` positions relative to the nearest positioned ancestor",
+                category: "css"
             },
             {
                 question: "Which media query rule applies styles when the screen width is 768px or less?",
@@ -262,7 +300,8 @@ const questionBank = {
                     "@media screen and (768px)",
                     "@media (width: 768px)"
                 ],
-                answer: "@media (max-width: 768px)"
+                answer: "@media (max-width: 768px)",
+                category: "css"
             },
             {
                 question: "What does the `aspect-ratio` property do?",
@@ -272,14 +311,16 @@ const questionBank = {
                     "Adjusts font size based on screen size",
                     "Changes the ratio of padding to margin"
                 ],
-                answer: "Sets the preferred width-to-height ratio of an element"
+                answer: "Sets the preferred width-to-height ratio of an element",
+                category: "css"
             }
         ],
         senior: [
             {
                 question: "Which CSS property is used to create a flexible container for flex items?",
                 options: ["flex", "display", "flex-direction", "justify-content"],
-                answer: "display"
+                answer: "display",
+                category: "css"
             },
             {
                 question: "What is the effect of `will-change: transform` in CSS?",
@@ -289,12 +330,14 @@ const questionBank = {
                     "Resets transformations",
                     "Prevents transformations"
                 ],
-                answer: "Improves performance by notifying the browser of likely changes"
+                answer: "Improves performance by notifying the browser of likely changes",
+                category: "css"
             },
             {
                 question: "Which pseudo-class targets an element that is the first child of its parent?",
                 options: [":first-child", ":nth-child(1)", ":first-of-type", ":nth-of-type(1)"],
-                answer: ":first-child"
+                answer: ":first-child",
+                category: "css"
             },
             {
                 question: "What does `position: sticky` do?",
@@ -304,12 +347,14 @@ const questionBank = {
                     "Positions element relative to parent only",
                     "Is ignored in most browsers"
                 ],
-                answer: "Acts like relative until a scroll threshold is reached, then acts like fixed"
+                answer: "Acts like relative until a scroll threshold is reached, then acts like fixed",
+                category: "css"
             },
             {
                 question: "Which unit is relative to the root element's font-size?",
                 options: ["em", "rem", "%", "vw"],
-                answer: "rem"
+                answer: "rem",
+                category: "css"
             },
             {
                 question: "What is the difference between `absolute` and `fixed` positioning?",
@@ -319,12 +364,14 @@ const questionBank = {
                     "They behave identically",
                     "Absolute ignores z-index, fixed respects it"
                 ],
-                answer: "Absolute is relative to nearest positioned ancestor, fixed is relative to viewport"
+                answer: "Absolute is relative to nearest positioned ancestor, fixed is relative to viewport",
+                category: "css"
             },
             {
                 question: "Which CSS property defines the spacing between flex items along the main axis?",
                 options: ["justify-content", "align-items", "align-content", "gap"],
-                answer: "justify-content"
+                answer: "justify-content",
+                category: "css"
             },
             {
                 question: "What is the difference between `inline`, `inline-block`, and `block` elements?",
@@ -334,12 +381,14 @@ const questionBank = {
                     "Block is deprecated",
                     "Inline-block always floats"
                 ],
-                answer: "Inline doesn’t break lines, block breaks lines, inline-block is like inline but allows width/height"
+                answer: "Inline doesn’t break lines, block breaks lines, inline-block is like inline but allows width/height",
+                category: "css"
             },
             {
                 question: "Which CSS property controls whether content is clipped or visible outside an element's box?",
                 options: ["overflow", "clip", "hidden", "visibility"],
-                answer: "overflow"
+                answer: "overflow",
+                category: "css"
             },
             {
                 question: "What is the purpose of `contain: layout` in CSS?",
@@ -349,12 +398,14 @@ const questionBank = {
                     "Forces element to use GPU",
                     "Stops event propagation"
                 ],
-                answer: "Limits the browser's rendering and layout calculations to the element itself"
+                answer: "Limits the browser's rendering and layout calculations to the element itself",
+                category: "css"
             },
             {
                 question: "Which CSS property allows you to create a grid layout?",
                 options: ["display: grid", "display: flex", "display: table", "position: grid"],
-                answer: "display: grid"
+                answer: "display: grid",
+                category: "css"
             },
             {
                 question: "What does `minmax()` do in CSS Grid?",
@@ -364,12 +415,14 @@ const questionBank = {
                     "Adjusts font size based on viewport",
                     "Prevents grid items from resizing"
                 ],
-                answer: "Sets a minimum and maximum size for a grid track"
+                answer: "Sets a minimum and maximum size for a grid track",
+                category: "css"
             },
             {
                 question: "Which pseudo-element is used to insert content before an element’s actual content?",
                 options: ["::before", "::after", ":first-line", ":first-letter"],
-                answer: "::before"
+                answer: "::before",
+                category: "css"
             },
             {
                 question: "What is the difference between `auto-fill` and `auto-fit` in CSS Grid?",
@@ -379,17 +432,20 @@ const questionBank = {
                     "Auto-fit centers items, auto-fill left-aligns",
                     "They are identical"
                 ],
-                answer: "Both repeat as many columns as possible; auto-fit collapses empty tracks, auto-fill leaves them"
+                answer: "Both repeat as many columns as possible; auto-fit collapses empty tracks, auto-fill leaves them",
+                category: "css"
             },
             {
                 question: "Which CSS property allows smooth transitions of property changes?",
                 options: ["transition", "animation", "transform", "keyframes"],
-                answer: "transition"
+                answer: "transition",
+                category: "css"
             },
             {
                 question: "Which function in CSS allows you to define a color using hue, saturation, and lightness?",
                 options: ["hsl()", "rgb()", "hsla()", "cmyk()"],
-                answer: "hsl()"
+                answer: "hsl()",
+                category: "css"
             },
             {
                 question: "What is the difference between `relative`, `sticky`, and `fixed` positioning?",
@@ -399,7 +455,8 @@ const questionBank = {
                     "Sticky is deprecated",
                     "Relative is same as absolute"
                 ],
-                answer: "Relative moves relative to normal position, sticky acts like relative until threshold, fixed relative to viewport"
+                answer: "Relative moves relative to normal position, sticky acts like relative until threshold, fixed relative to viewport",
+                category: "css"
             },
             {
                 question: "What does `clamp()` do in CSS?",
@@ -409,12 +466,14 @@ const questionBank = {
                     "Rounds numeric values",
                     "Freezes animation"
                 ],
-                answer: "Restricts a value between a defined minimum and maximum"
+                answer: "Restricts a value between a defined minimum and maximum",
+                category: "css"
             },
             {
                 question: "Which property controls the stacking order of elements that have the same z-index?",
                 options: ["order", "z-index", "position", "stacking-context"],
-                answer: "stacking-context"
+                answer: "stacking-context",
+                category: "css"
             },
             {
                 question: "What is the purpose of `mix-blend-mode`?",
@@ -424,7 +483,8 @@ const questionBank = {
                     "Blends borders",
                     "Combines text shadows"
                 ],
-                answer: "Defines how an element's content blends with the background"
+                answer: "Defines how an element's content blends with the background",
+                category: "css"
             }
         ]
     },
@@ -433,22 +493,26 @@ const questionBank = {
             {
                 question: "What is the correct way to declare a variable in JavaScript (ES6)?",
                 options: ["var myVar;", "let myVar;", "const myVar;", "All of the above"],
-                answer: "All of the above"
+                answer: "All of the above",
+                category: "javascript"
             },
             {
                 question: "Which of the following is NOT a JavaScript data type?",
                 options: ["String", "Number", "Boolean", "Character"],
-                answer: "Character"
+                answer: "Character",
+                category: "javascript"
             },
             {
                 question: "What is the result of '2' + 2 in JavaScript?",
                 options: ["4", "'22'", "NaN", "Error"],
-                answer: "'22'"
+                answer: "'22'",
+                category: "javascript"
             },
             {
                 question: "Which symbol is used for comments in JavaScript?",
                 options: ["// for single-line", "#", "/* for multi-line */", "Both // and /* */"],
-                answer: "Both // and /* */"
+                answer: "Both // and /* */",
+                category: "javascript"
             },
             {
                 question: "What does '===' check in JavaScript?",
@@ -458,17 +522,20 @@ const questionBank = {
                     "Only type equality",
                     "Nothing"
                 ],
-                answer: "Equality of value and type"
+                answer: "Equality of value and type",
+                category: "javascript"
             },
             {
                 question: "What will console.log(typeof null) output?",
                 options: ["null", "undefined", "object", "string"],
-                answer: "object"
+                answer: "object",
+                category: "javascript"
             },
             {
                 question: "Which method is used to remove the last element from an array?",
                 options: ["shift()", "pop()", "remove()", "spliceLast()"],
-                answer: "pop()"
+                answer: "pop()",
+                category: "javascript"
             },
             {
                 question: "How do you write an if statement in JavaScript?",
@@ -478,12 +545,14 @@ const questionBank = {
                     "if { condition }",
                     "if condition { }"
                 ],
-                answer: "if (condition) { }"
+                answer: "if (condition) { }",
+                category: "javascript"
             },
             {
                 question: "Which keyword stops the execution of a loop?",
                 options: ["stop", "break", "exit", "halt"],
-                answer: "break"
+                answer: "break",
+                category: "javascript"
             },
             {
                 question: "How do you create a function in JavaScript?",
@@ -493,57 +562,68 @@ const questionBank = {
                     "func myFunction() { }",
                     "create function myFunction() { }"
                 ],
-                answer: "function myFunction() { }"
+                answer: "function myFunction() { }",
+                category: "javascript"
             },
             {
                 question: "Which array method adds one or more elements to the end?",
                 options: ["push()", "pop()", "unshift()", "append()"],
-                answer: "push()"
+                answer: "push()",
+                category: "javascript"
             },
             {
                 question: "What does NaN stand for in JavaScript?",
                 options: ["No actual number", "Not a number", "Negative and null", "Not a null"],
-                answer: "Not a number"
+                answer: "Not a number",
+                category: "javascript"
             },
             {
                 question: "Which operator is used to assign a value to a variable?",
                 options: ["-", "=", "==", "==="],
-                answer: "="
+                answer: "=",
+                category: "javascript"
             },
             {
                 question: "How do you convert a string to an integer in JavaScript?",
                 options: ["parseInt()", "toString()", "Number()", "Both parseInt() and Number()"],
-                answer: "Both parseInt() and Number()"
+                answer: "Both parseInt() and Number()",
+                category: "javascript"
             },
             {
                 question: "What will 'typeof []' return?",
                 options: ["object", "array", "list", "undefined"],
-                answer: "object"
+                answer: "object",
+                category: "javascript"
             },
             {
                 question: "Which method joins array elements into a string?",
                 options: ["concat()", "join()", "toString()", "merge()"],
-                answer: "join()"
+                answer: "join()",
+                category: "javascript"
             },
             {
                 question: "Which keyword declares a block-scoped variable?",
                 options: ["var", "let", "const", "Both let and const"],
-                answer: "Both let and const"
+                answer: "Both let and const",
+                category: "javascript"
             },
             {
                 question: "What is the default value of a variable that is declared but not assigned?",
                 options: ["null", "undefined", "0", "false"],
-                answer: "undefined"
+                answer: "undefined",
+                category: "javascript"
             },
             {
                 question: "Which symbol is used for strict equality in JavaScript?",
                 options: ["==", "===", "!=", "!=="],
-                answer: "==="
+                answer: "===",
+                category: "javascript"
             },
             {
                 question: "What will 'Boolean(0)' return?",
                 options: ["true", "false", "undefined", "null"],
-                answer: "false"
+                answer: "false",
+                category: "javascript"
             }
         ],
         mid: [
@@ -555,17 +635,20 @@ const questionBank = {
                     "Both are function-scoped",
                     "Both are block-scoped"
                 ],
-                answer: "`let` is block-scoped, `var` is function-scoped"
+                answer: "`let` is block-scoped, `var` is function-scoped",
+                category: "javascript"
             },
             {
                 question: "What will `console.log(typeof NaN)` output?",
                 options: ["number", "NaN", "undefined", "object"],
-                answer: "number"
+                answer: "number",
+                category: "javascript"
             },
             {
                 question: "What is the result of `[] + {}` in JavaScript?",
                 options: ["'[object Object]'", "'[object Object]{}'", "NaN", "Error"],
-                answer: "'[object Object]'"
+                answer: "'[object Object]'",
+                category: "javascript"
             },
             {
                 question: "What is the difference between `==` and `===`?",
@@ -575,12 +658,14 @@ const questionBank = {
                     "Both compare value and type",
                     "Both compare value only"
                 ],
-                answer: "`==` compares value only, `===` compares value and type"
+                answer: "`==` compares value only, `===` compares value and type",
+                category: "javascript"
             },
             {
                 question: "Which method is used to create a new array with results of calling a function on every element?",
                 options: ["map()", "forEach()", "filter()", "reduce()"],
-                answer: "map()"
+                answer: "map()",
+                category: "javascript"
             },
             {
                 question: "What is a closure in JavaScript?",
@@ -590,17 +675,20 @@ const questionBank = {
                     "A function that executes immediately",
                     "A function defined inside an object"
                 ],
-                answer: "A function having access to its outer scope even after outer function has executed"
+                answer: "A function having access to its outer scope even after outer function has executed",
+                category: "javascript"
             },
             {
                 question: "What will be the output of `0.1 + 0.2 === 0.3`?",
                 options: ["false", "true", "undefined", "NaN"],
-                answer: "false"
+                answer: "false",
+                category: "javascript"
             },
             {
                 question: "Which array method reduces all elements to a single value?",
                 options: ["reduce()", "map()", "filter()", "forEach()"],
-                answer: "reduce()"
+                answer: "reduce()",
+                category: "javascript"
             },
             {
                 question: "What is the difference between `call`, `apply`, and `bind`?",
@@ -610,17 +698,20 @@ const questionBank = {
                     "They all behave identically",
                     "`bind` invokes immediately, `call` and `apply` return functions"
                 ],
-                answer: "`call` and `apply` invoke a function immediately, `bind` returns a new function"
+                answer: "`call` and `apply` invoke a function immediately, `bind` returns a new function",
+                category: "javascript"
             },
             {
                 question: "Which of these is NOT a primitive type in JavaScript?",
                 options: ["object", "string", "number", "boolean"],
-                answer: "object"
+                answer: "object",
+                category: "javascript"
             },
             {
                 question: "What will `typeof null` return?",
                 options: ["object", "null", "undefined", "NaN"],
-                answer: "object"
+                answer: "object",
+                category: "javascript"
             },
             {
                 question: "What is event delegation in JavaScript?",
@@ -630,7 +721,8 @@ const questionBank = {
                     "Assigning multiple listeners to the same element",
                     "Using setTimeout to delay event handling"
                 ],
-                answer: "Attaching a single event listener to a parent to handle events for its children"
+                answer: "Attaching a single event listener to a parent to handle events for its children",
+                category: "javascript"
             },
             {
                 question: "What does the spread operator `...` do?",
@@ -640,7 +732,8 @@ const questionBank = {
                     "Creates a copy of function",
                     "Combines arrays into a string"
                 ],
-                answer: "Expands an iterable into individual elements"
+                answer: "Expands an iterable into individual elements",
+                category: "javascript"
             },
             {
                 question: "Which of these will NOT create a new object in JavaScript?",
@@ -650,7 +743,8 @@ const questionBank = {
                     "new Object()",
                     "Object.assign(null)"
                 ],
-                answer: "Object.assign(null)"
+                answer: "Object.assign(null)",
+                category: "javascript"
             },
             {
                 question: "What is the difference between synchronous and asynchronous code?",
@@ -660,17 +754,20 @@ const questionBank = {
                     "They are identical",
                     "Asynchronous is faster than synchronous always"
                 ],
-                answer: "Synchronous runs sequentially, asynchronous can run without blocking"
+                answer: "Synchronous runs sequentially, asynchronous can run without blocking",
+                category: "javascript"
             },
             {
                 question: "What will `typeof NaN === 'number'` evaluate to?",
                 options: ["true", "false", "undefined", "NaN"],
-                answer: "true"
+                answer: "true",
+                category: "javascript"
             },
             {
                 question: "Which method converts a JSON string to a JavaScript object?",
                 options: ["JSON.parse()", "JSON.stringify()", "JSON.object()", "JSON.toJS()"],
-                answer: "JSON.parse()"
+                answer: "JSON.parse()",
+                category: "javascript"
             },
             {
                 question: "What is the difference between `null` and `undefined`?",
@@ -680,7 +777,8 @@ const questionBank = {
                     "Both are identical",
                     "Both represent zero"
                 ],
-                answer: "`null` is assigned value, `undefined` means variable is declared but not assigned"
+                answer: "`null` is assigned value, `undefined` means variable is declared but not assigned",
+                category: "javascript"
             },
             {
                 question: "What does `Promise.all()` do?",
@@ -690,7 +788,8 @@ const questionBank = {
                     "Resolves promises sequentially",
                     "Cancels unresolved promises"
                 ],
-                answer: "Waits for all promises to resolve or any to reject"
+                answer: "Waits for all promises to resolve or any to reject",
+                category: "javascript"
             },
             {
                 question: "What is a generator function in JavaScript?",
@@ -700,14 +799,16 @@ const questionBank = {
                     "A function that always returns a Promise",
                     "A function that clones objects"
                 ],
-                answer: "A function that can pause and resume execution using `yield`"
+                answer: "A function that can pause and resume execution using `yield`",
+                category: "javascript"
             }
         ],
         senior: [
             {
                 question: "What will be the output of the following code?\n\nconsole.log([] == ![]);",
                 options: ["true", "false", "TypeError", "undefined"],
-                answer: "true"
+                answer: "true",
+                category: "javascript"
             },
             {
                 question: "Which of these statements about JavaScript's event loop is TRUE?",
@@ -717,7 +818,8 @@ const questionBank = {
                     "Event loop blocks UI updates always",
                     "Call stack and event loop are the same"
                 ],
-                answer: "Microtasks have higher priority than macrotasks"
+                answer: "Microtasks have higher priority than macrotasks",
+                category: "javascript"
             },
             {
                 question: "What is the difference between `for...in` and `for...of` loops?",
@@ -727,7 +829,8 @@ const questionBank = {
                     "They are identical",
                     "`for...in` only works on arrays"
                 ],
-                answer: "`for...in` iterates keys, `for...of` iterates values"
+                answer: "`for...in` iterates keys, `for...of` iterates values",
+                category: "javascript"
             },
             {
                 question: "What will the following code output?\n\nlet a = [1,2,3];\nlet b = a;\nb.push(4);\nconsole.log(a);",
@@ -737,7 +840,8 @@ const questionBank = {
                     "[4]",
                     "Error"
                 ],
-                answer: "[1,2,3,4]"
+                answer: "[1,2,3,4]",
+                category: "javascript"
             },
             {
                 question: "What is a WeakMap in JavaScript?",
@@ -747,7 +851,8 @@ const questionBank = {
                     "A Map that allows primitive keys only",
                     "A global map shared across all functions"
                 ],
-                answer: "A collection of key-value pairs where keys are objects and references are weakly held"
+                answer: "A collection of key-value pairs where keys are objects and references are weakly held",
+                category: "javascript"
             },
             {
                 question: "Which of these is true about JavaScript’s `this` keyword in strict mode?",
@@ -757,12 +862,14 @@ const questionBank = {
                     "Arrow functions bind their own `this` dynamically",
                     "`this` is immutable"
                 ],
-                answer: "In global context, `this` is undefined"
+                answer: "In global context, `this` is undefined",
+                category: "javascript"
             },
             {
                 question: "What will this code print?\n\nconsole.log(typeof (function(){}));",
                 options: ["function", "object", "undefined", "null"],
-                answer: "function"
+                answer: "function",
+                category: "javascript"
             },
             {
                 question: "Which of the following will NOT create a new execution context?",
@@ -772,7 +879,8 @@ const questionBank = {
                     "Arrow function invocation",
                     "Eval()"
                 ],
-                answer: "Arrow function invocation"
+                answer: "Arrow function invocation",
+                category: "javascript"
             },
             {
                 question: "What is the difference between `Object.freeze()` and `Object.seal()`?",
@@ -782,12 +890,14 @@ const questionBank = {
                     "They are identical",
                     "Freeze only works on arrays"
                 ],
-                answer: "Freeze makes object immutable, seal prevents adding/removing properties but allows modification"
+                answer: "Freeze makes object immutable, seal prevents adding/removing properties but allows modification",
+                category: "javascript"
             },
             {
                 question: "What will the following code output?\n\nconsole.log(0 || '0' && []);",
                 options: ["[]", "0", "'0'", "false"],
-                answer: "[]"
+                answer: "[]",
+                category: "javascript"
             },
             {
                 question: "What is the primary difference between `setTimeout(fn, 0)` and `Promise.resolve().then(fn)`?",
@@ -797,12 +907,14 @@ const questionBank = {
                     "Both run in macrotask queue",
                     "`setTimeout` runs immediately, Promise waits"
                 ],
-                answer: "`Promise` callback runs in microtask queue, `setTimeout` runs in macrotask queue"
+                answer: "`Promise` callback runs in microtask queue, `setTimeout` runs in macrotask queue",
+                category: "javascript"
             },
             {
                 question: "Which of these is NOT a method of controlling asynchronous execution in JavaScript?",
                 options: ["async/await", "Generators", "setImmediate", "Hoisting"],
-                answer: "Hoisting"
+                answer: "Hoisting",
+                category: "javascript"
             },
             {
                 question: "What is the difference between shallow copy and deep copy in JavaScript?",
@@ -812,7 +924,8 @@ const questionBank = {
                     "They are identical",
                     "Deep copy only works on arrays"
                 ],
-                answer: "Shallow copy copies references of nested objects, deep copy duplicates nested objects"
+                answer: "Shallow copy copies references of nested objects, deep copy duplicates nested objects",
+                category: "javascript"
             },
             {
                 question: "Which statement about JavaScript modules is TRUE?",
@@ -822,12 +935,14 @@ const questionBank = {
                     "Modules cannot import other modules",
                     "Modules automatically merge global scope"
                 ],
-                answer: "ES modules are statically analyzed, CommonJS modules are dynamically loaded"
+                answer: "ES modules are statically analyzed, CommonJS modules are dynamically loaded",
+                category: "javascript"
             },
             {
                 question: "What will the following code output?\n\nlet x = 10;\n(function(){ console.log(x); var x = 20; })();",
                 options: ["undefined", "10", "20", "ReferenceError"],
-                answer: "undefined"
+                answer: "undefined",
+                category: "javascript"
             },
             {
                 question: "Which statement about JavaScript Prototypes is TRUE?",
@@ -837,7 +952,8 @@ const questionBank = {
                     "Prototypes are immutable",
                     "Prototypes are only for arrays"
                 ],
-                answer: "Every object has an internal [[Prototype]] reference that can be accessed via __proto__"
+                answer: "Every object has an internal [[Prototype]] reference that can be accessed via __proto__",
+                category: "javascript"
             },
             {
                 question: "What is the output of:\n\nconsole.log([] + []);\nconsole.log([] + {});\nconsole.log({} + []);",
@@ -847,7 +963,8 @@ const questionBank = {
                     "'', '[object Object]', '[object Object]'",
                     "Error"
                 ],
-                answer: "'', '[object Object]', '[object Object]'"
+                answer: "'', '[object Object]', '[object Object]'",
+                category: "javascript"
             },
             {
                 question: "What is the difference between `function f(){}` and `const f = () => {}` regarding hoisting?",
@@ -857,7 +974,8 @@ const questionBank = {
                     "Arrow functions are hoisted, regular functions are not",
                     "Neither are hoisted"
                 ],
-                answer: "Function declarations are hoisted, arrow function expressions are not"
+                answer: "Function declarations are hoisted, arrow function expressions are not",
+                category: "javascript"
             },
             {
                 question: "What is a Symbol in JavaScript?",
@@ -867,7 +985,8 @@ const questionBank = {
                     "A string type",
                     "A reference type that can be modified"
                 ],
-                answer: "A unique, immutable primitive used as object keys"
+                answer: "A unique, immutable primitive used as object keys",
+                category: "javascript"
             },
             {
                 question: "What will the following code output?\n\nconst obj = { a: 1 };\nObject.defineProperty(obj, 'b', { value: 2, enumerable: false });\nconsole.log(Object.keys(obj));",
@@ -877,7 +996,8 @@ const questionBank = {
                     "['b']",
                     "[]"
                 ],
-                answer: "['a']"
+                answer: "['a']",
+                category: "javascript"
             }
         ]
     },
@@ -891,7 +1011,8 @@ const questionBank = {
                     "Server-side rendering only",
                     "Creating mobile operating systems"
                 ],
-                answer: "Building user interfaces"
+                answer: "Building user interfaces",
+                category: "react"
             },
             {
                 question: "Which method is used to create components in React using functions?",
@@ -901,7 +1022,8 @@ const questionBank = {
                     "Functional components",
                     "renderFunction"
                 ],
-                answer: "Functional components"
+                answer: "Functional components",
+                category: "react"
             },
             {
                 question: "What is JSX?",
@@ -911,7 +1033,8 @@ const questionBank = {
                     "A type of JSON file",
                     "A package manager"
                 ],
-                answer: "A JavaScript syntax extension that allows writing HTML in JavaScript"
+                answer: "A JavaScript syntax extension that allows writing HTML in JavaScript",
+                category: "react"
             },
             {
                 question: "Which hook is used for state management in a functional component?",
@@ -921,7 +1044,8 @@ const questionBank = {
                     "useContext",
                     "useReducer"
                 ],
-                answer: "useState"
+                answer: "useState",
+                category: "react"
             },
             {
                 question: "What is the purpose of the `useEffect` hook?",
@@ -931,7 +1055,8 @@ const questionBank = {
                     "To create new components",
                     "To store global state"
                 ],
-                answer: "To handle side effects in functional components"
+                answer: "To handle side effects in functional components",
+                category: "react"
             },
             {
                 question: "What is the correct syntax to pass a prop named `name` to a component?",
@@ -941,7 +1066,8 @@ const questionBank = {
                     "<MyComponent name: 'John' />",
                     "<MyComponent prop='name:John' />"
                 ],
-                answer: "<MyComponent name='John' />"
+                answer: "<MyComponent name='John' />",
+                category: "react"
             },
             {
                 question: "How do you create a new React app using Create React App?",
@@ -951,7 +1077,8 @@ const questionBank = {
                     "react new app my-app",
                     "npm init react-app"
                 ],
-                answer: "npx create-react-app my-app"
+                answer: "npx create-react-app my-app",
+                category: "react"
             },
             {
                 question: "What is a key in React lists used for?",
@@ -961,7 +1088,8 @@ const questionBank = {
                     "To define CSS styles",
                     "To store element values"
                 ],
-                answer: "To identify each element uniquely"
+                answer: "To identify each element uniquely",
+                category: "react"
             },
             {
                 question: "Which prop is used to pass data from parent to child components?",
@@ -971,7 +1099,8 @@ const questionBank = {
                     "data",
                     "context"
                 ],
-                answer: "props"
+                answer: "props",
+                category: "react"
             },
             {
                 question: "What does the Virtual DOM do in React?",
@@ -981,7 +1110,8 @@ const questionBank = {
                     "Controls CSS animations",
                     "Manages HTTP requests"
                 ],
-                answer: "Improves performance by updating only changed parts of the UI"
+                answer: "Improves performance by updating only changed parts of the UI",
+                category: "react"
             },
             {
                 question: "Which of these is a correct way to handle events in React?",
@@ -991,7 +1121,8 @@ const questionBank = {
                     "<button onClick='handleClick'>Click</button>",
                     "<button click={handleClick}>Click</button>"
                 ],
-                answer: "<button onClick={handleClick}>Click</button>"
+                answer: "<button onClick={handleClick}>Click</button>",
+                category: "react"
             },
             {
                 question: "What does `npm start` do in a Create React App project?",
@@ -1001,7 +1132,8 @@ const questionBank = {
                     "Installs dependencies",
                     "Deploys the app to the server"
                 ],
-                answer: "Starts the development server"
+                answer: "Starts the development server",
+                category: "react"
             },
             {
                 question: "How can you conditionally render content in React?",
@@ -1011,7 +1143,8 @@ const questionBank = {
                     "Using HTML if attributes",
                     "Using React templates"
                 ],
-                answer: "Using JavaScript conditional expressions inside JSX"
+                answer: "Using JavaScript conditional expressions inside JSX",
+                category: "react"
             },
             {
                 question: "Which tool is commonly used to manage routing in React?",
@@ -1021,7 +1154,8 @@ const questionBank = {
                     "React Switch",
                     "React Path"
                 ],
-                answer: "React Router"
+                answer: "React Router",
+                category: "react"
             },
             {
                 question: "What is the default port for a React app started with Create React App?",
@@ -1031,7 +1165,8 @@ const questionBank = {
                     "5000",
                     "4000"
                 ],
-                answer: "3000"
+                answer: "3000",
+                category: "react"
             },
             {
                 question: "Which statement about props is correct?",
@@ -1041,7 +1176,8 @@ const questionBank = {
                     "Props are only available in class components",
                     "Props store local component state"
                 ],
-                answer: "Props are immutable"
+                answer: "Props are immutable",
+                category: "react"
             },
             {
                 question: "What is the correct way to import React in a file?",
@@ -1051,7 +1187,8 @@ const questionBank = {
                     "include React;",
                     "import 'react';"
                 ],
-                answer: "import React from 'react';"
+                answer: "import React from 'react';",
+                category: "react"
             },
             {
                 question: "How do you update state in a functional component?",
@@ -1061,7 +1198,8 @@ const questionBank = {
                     "By modifying this.state",
                     "By changing props"
                 ],
-                answer: "By calling the updater function from useState"
+                answer: "By calling the updater function from useState",
+                category: "react"
             },
             {
                 question: "Which of the following is NOT a React hook?",
@@ -1071,7 +1209,8 @@ const questionBank = {
                     "useEffect",
                     "useReducer"
                 ],
-                answer: "useData"
+                answer: "useData",
+                category: "react"
             },
             {
                 question: "What is React's main advantage?",
@@ -1081,7 +1220,8 @@ const questionBank = {
                     "Server-side language support",
                     "Native CSS preprocessor"
                 ],
-                answer: "Efficient UI updates via Virtual DOM"
+                answer: "Efficient UI updates via Virtual DOM",
+                category: "react"
             }
         ],
         mid: [
@@ -1093,12 +1233,14 @@ const questionBank = {
                     "Both are identical",
                     "Only class components can be controlled"
                 ],
-                answer: "Controlled components have state managed by React, uncontrolled manage their own state"
+                answer: "Controlled components have state managed by React, uncontrolled manage their own state",
+                category: "react"
             },
             {
                 question: "Which hook should you use to perform side effects in functional components?",
                 options: ["useEffect", "useState", "useMemo", "useCallback"],
-                answer: "useEffect"
+                answer: "useEffect",
+                category: "react"
             },
             {
                 question: "What will happen if you call `setState` multiple times synchronously in a class component?",
@@ -1108,7 +1250,8 @@ const questionBank = {
                     "It throws an error",
                     "The last setState is ignored"
                 ],
-                answer: "React may batch updates for performance"
+                answer: "React may batch updates for performance",
+                category: "react"
             },
             {
                 question: "What is the difference between `React.memo` and `useMemo`?",
@@ -1118,12 +1261,14 @@ const questionBank = {
                     "They are identical",
                     "React.memo only works in class components"
                 ],
-                answer: "React.memo memoizes a component, useMemo memoizes a value"
+                answer: "React.memo memoizes a component, useMemo memoizes a value",
+                category: "react"
             },
             {
                 question: "Which hook is used to access a DOM element directly?",
                 options: ["useRef", "useEffect", "useState", "useCallback"],
-                answer: "useRef"
+                answer: "useRef",
+                category: "react"
             },
             {
                 question: "What is the default behavior of React’s `useEffect` with no dependencies?",
@@ -1133,7 +1278,8 @@ const questionBank = {
                     "Runs only on unmount",
                     "Never runs"
                 ],
-                answer: "Runs after every render"
+                answer: "Runs after every render",
+                category: "react"
             },
             {
                 question: "What is the difference between `React.PureComponent` and `React.Component`?",
@@ -1143,12 +1289,14 @@ const questionBank = {
                     "PureComponent cannot have state",
                     "There is no difference"
                 ],
-                answer: "PureComponent implements shallow prop and state comparison to prevent unnecessary renders"
+                answer: "PureComponent implements shallow prop and state comparison to prevent unnecessary renders",
+                category: "react"
             },
             {
                 question: "Which hook allows you to share logic between components without repeating code?",
                 options: ["Custom Hooks", "useContext", "useReducer", "useEffect"],
-                answer: "Custom Hooks"
+                answer: "Custom Hooks",
+                category: "react"
             },
             {
                 question: "What is the difference between `useReducer` and `useState`?",
@@ -1158,12 +1306,14 @@ const questionBank = {
                     "They are identical",
                     "useReducer cannot update nested state"
                 ],
-                answer: "useReducer is useful for complex state logic, useState for simple state"
+                answer: "useReducer is useful for complex state logic, useState for simple state",
+                category: "react"
             },
             {
                 question: "Which method is used to update state in class components?",
                 options: ["this.setState", "this.updateState", "this.state()", "this.forceUpdate"],
-                answer: "this.setState"
+                answer: "this.setState",
+                category: "react"
             },
             {
                 question: "What is the purpose of `React.Fragment`?",
@@ -1173,7 +1323,8 @@ const questionBank = {
                     "To memoize children",
                     "To define default props"
                 ],
-                answer: "To group multiple elements without adding extra nodes to the DOM"
+                answer: "To group multiple elements without adding extra nodes to the DOM",
+                category: "react"
             },
             {
                 question: "What is the difference between `useLayoutEffect` and `useEffect`?",
@@ -1183,7 +1334,8 @@ const questionBank = {
                     "They are identical",
                     "useLayoutEffect only works in class components"
                 ],
-                answer: "useLayoutEffect runs synchronously after DOM mutations, useEffect runs asynchronously"
+                answer: "useLayoutEffect runs synchronously after DOM mutations, useEffect runs asynchronously",
+                category: "react"
             },
             {
                 question: "How does React handle keys in lists?",
@@ -1193,7 +1345,8 @@ const questionBank = {
                     "Keys are optional and have no effect",
                     "Keys prevent re-rendering completely"
                 ],
-                answer: "Keys help React identify which items have changed, added, or removed"
+                answer: "Keys help React identify which items have changed, added, or removed",
+                category: "react"
             },
             {
                 question: "What is a React Portal used for?",
@@ -1203,12 +1356,14 @@ const questionBank = {
                     "Suspense fallback rendering",
                     "Managing Redux state"
                 ],
-                answer: "Rendering children into a DOM node outside of parent hierarchy"
+                answer: "Rendering children into a DOM node outside of parent hierarchy",
+                category: "react"
             },
             {
                 question: "Which hook is useful for optimizing performance by memoizing a function?",
                 options: ["useCallback", "useMemo", "useEffect", "useState"],
-                answer: "useCallback"
+                answer: "useCallback",
+                category: "react"
             },
             {
                 question: "What happens if you update state based on previous state incorrectly?",
@@ -1218,7 +1373,8 @@ const questionBank = {
                     "It throws an error",
                     "Component unmounts"
                 ],
-                answer: "You may get stale state due to asynchronous updates"
+                answer: "You may get stale state due to asynchronous updates",
+                category: "react"
             },
             {
                 question: "What is the difference between `React.Suspense` and `ErrorBoundary`?",
@@ -1228,12 +1384,14 @@ const questionBank = {
                     "They are identical",
                     "Suspense works only in class components"
                 ],
-                answer: "Suspense handles loading states, ErrorBoundary handles runtime errors"
+                answer: "Suspense handles loading states, ErrorBoundary handles runtime errors",
+                category: "react"
             },
             {
                 question: "Which hook is useful for global state management in React without Redux?",
                 options: ["useContext", "useReducer", "useMemo", "useCallback"],
-                answer: "useContext"
+                answer: "useContext",
+                category: "react"
             },
             {
                 question: "What is the difference between `React.lazy` and `React.Suspense`?",
@@ -1243,7 +1401,8 @@ const questionBank = {
                     "They are identical",
                     "React.lazy only works in class components"
                 ],
-                answer: "React.lazy dynamically imports components, Suspense shows fallback while loading"
+                answer: "React.lazy dynamically imports components, Suspense shows fallback while loading",
+                category: "react"
             },
             {
                 question: "What will happen if you forget the `key` prop in a list?",
@@ -1253,7 +1412,8 @@ const questionBank = {
                     "The component will not render",
                     "React throws a runtime error"
                 ],
-                answer: "React may re-render unnecessarily and lose element state"
+                answer: "React may re-render unnecessarily and lose element state",
+                category: "react"
             }
         ],
         senior: [
@@ -1265,7 +1425,8 @@ const questionBank = {
                     "They are identical",
                     "Concurrent mode only works with class components"
                 ],
-                answer: "Concurrent mode allows interruptible rendering for better responsiveness, legacy mode does not"
+                answer: "Concurrent mode allows interruptible rendering for better responsiveness, legacy mode does not",
+                category: "react"
             },
             {
                 question: "What is the purpose of `useImperativeHandle` hook?",
@@ -1275,7 +1436,8 @@ const questionBank = {
                     "Handles errors inside components",
                     "Prevents re-rendering"
                 ],
-                answer: "Customizes the instance value exposed when using `ref`"
+                answer: "Customizes the instance value exposed when using `ref`",
+                category: "react"
             },
             {
                 question: "What is the difference between `ReactDOM.createRoot` and `ReactDOM.render`?",
@@ -1285,7 +1447,8 @@ const questionBank = {
                     "render enables concurrent features, createRoot is legacy",
                     "createRoot only works for class components"
                 ],
-                answer: "createRoot enables concurrent features, render is legacy"
+                answer: "createRoot enables concurrent features, render is legacy",
+                category: "react"
             },
             {
                 question: "Which statement about React Fiber is TRUE?",
@@ -1295,7 +1458,8 @@ const questionBank = {
                     "Fiber replaces JSX parsing",
                     "Fiber automatically optimizes Redux state"
                 ],
-                answer: "Fiber allows interruptible and incremental rendering of components"
+                answer: "Fiber allows interruptible and incremental rendering of components",
+                category: "react"
             },
             {
                 question: "What is the difference between `useEffect` cleanup and `componentWillUnmount`?",
@@ -1305,7 +1469,8 @@ const questionBank = {
                     "componentWillUnmount runs after each render",
                     "Cleanup only runs on mount"
                 ],
-                answer: "Cleanup function runs when effect is re-run or component unmounts, componentWillUnmount runs only on unmount"
+                answer: "Cleanup function runs when effect is re-run or component unmounts, componentWillUnmount runs only on unmount",
+                category: "react"
             },
             {
                 question: "What is the difference between server-side rendering (SSR) and static site generation (SSG) in React?",
@@ -1315,7 +1480,8 @@ const questionBank = {
                     "Both generate HTML at runtime",
                     "SSR only works with class components"
                 ],
-                answer: "SSR generates HTML on each request, SSG generates HTML at build time"
+                answer: "SSR generates HTML on each request, SSG generates HTML at build time",
+                category: "react"
             },
             {
                 question: "How does `React.memo` work with complex objects as props?",
@@ -1325,7 +1491,8 @@ const questionBank = {
                     "It always prevents re-render",
                     "React.memo cannot be used with objects"
                 ],
-                answer: "Shallow comparison is used; new object references will trigger re-render"
+                answer: "Shallow comparison is used; new object references will trigger re-render",
+                category: "react"
             },
             {
                 question: "What is the difference between `forwardRef` and `useRef`?",
@@ -1335,7 +1502,8 @@ const questionBank = {
                     "They are identical",
                     "forwardRef only works with class components"
                 ],
-                answer: "forwardRef passes a ref to child component, useRef creates a ref inside a component"
+                answer: "forwardRef passes a ref to child component, useRef creates a ref inside a component",
+                category: "react"
             },
             {
                 question: "What is the main advantage of Suspense for data fetching in concurrent mode?",
@@ -1345,7 +1513,8 @@ const questionBank = {
                     "Suspense memoizes values",
                     "Suspense replaces useEffect"
                 ],
-                answer: "Suspense allows React to pause rendering until data is ready, improving UX"
+                answer: "Suspense allows React to pause rendering until data is ready, improving UX",
+                category: "react"
             },
             {
                 question: "What is the difference between `hydrate` and `render` in React DOM?",
@@ -1355,7 +1524,8 @@ const questionBank = {
                     "They are identical",
                     "hydrate only works with class components"
                 ],
-                answer: "hydrate attaches event listeners to SSR markup, render creates fresh markup"
+                answer: "hydrate attaches event listeners to SSR markup, render creates fresh markup",
+                category: "react"
             },
             {
                 question: "Which of these is true about React context performance?",
@@ -1365,7 +1535,8 @@ const questionBank = {
                     "Context only updates class components",
                     "Context updates do not trigger re-render"
                 ],
-                answer: "Updating a context value triggers re-render for all consuming components"
+                answer: "Updating a context value triggers re-render for all consuming components",
+                category: "react"
             },
             {
                 question: "How does React handle state updates in concurrent mode?",
@@ -1375,7 +1546,8 @@ const questionBank = {
                     "Concurrent mode disables setState",
                     "Updates are discarded if async"
                 ],
-                answer: "State updates can be interrupted and resumed, prioritizing higher priority updates"
+                answer: "State updates can be interrupted and resumed, prioritizing higher priority updates",
+                category: "react"
             },
             {
                 question: "What is the difference between `useDeferredValue` and `useTransition`?",
@@ -1385,7 +1557,8 @@ const questionBank = {
                     "useTransition defers a value, useDeferredValue defers a state",
                     "useDeferredValue only works in class components"
                 ],
-                answer: "useDeferredValue defers a value update, useTransition defers a state update"
+                answer: "useDeferredValue defers a value update, useTransition defers a state update",
+                category: "react"
             },
             {
                 question: "What is React’s `Profiler` used for?",
@@ -1395,7 +1568,8 @@ const questionBank = {
                     "Suspends component rendering",
                     "Memoizes expensive calculations"
                 ],
-                answer: "Measures rendering performance of components"
+                answer: "Measures rendering performance of components",
+                category: "react"
             },
             {
                 question: "How does React differentiate between controlled and uncontrolled forms internally?",
@@ -1405,12 +1579,14 @@ const questionBank = {
                     "Uncontrolled forms cannot update state",
                     "Controlled forms cannot use refs"
                 ],
-                answer: "Controlled inputs use value prop, uncontrolled inputs use defaultValue"
+                answer: "Controlled inputs use value prop, uncontrolled inputs use defaultValue",
+                category: "react"
             },
             {
                 question: "Which hook is designed to prevent unnecessary expensive computations?",
                 options: ["useMemo", "useCallback", "useRef", "useEffect"],
-                answer: "useMemo"
+                answer: "useMemo",
+                category: "react"
             },
             {
                 question: "What is the difference between `key` and `ref` in React?",
@@ -1420,7 +1596,8 @@ const questionBank = {
                     "ref is used only for styling",
                     "key prevents re-rendering"
                 ],
-                answer: "key helps React identify elements in lists, ref provides access to DOM nodes or component instances"
+                answer: "key helps React identify elements in lists, ref provides access to DOM nodes or component instances",
+                category: "react"
             },
             {
                 question: "How does React handle errors inside event handlers?",
@@ -1430,7 +1607,8 @@ const questionBank = {
                     "They prevent the component from re-rendering",
                     "React automatically retries the handler"
                 ],
-                answer: "Errors in event handlers are not caught by Error Boundaries"
+                answer: "Errors in event handlers are not caught by Error Boundaries",
+                category: "react"
             },
             {
                 question: "What is the purpose of `useId` hook in React 18+?",
@@ -1440,7 +1618,8 @@ const questionBank = {
                     "Memoizes component props",
                     "Handles error boundaries"
                 ],
-                answer: "Generates a unique ID for accessibility and SSR consistency"
+                answer: "Generates a unique ID for accessibility and SSR consistency",
+                category: "react"
             },
             {
                 question: "What is the difference between lazy loading a component with React.lazy and dynamic import without React.lazy?",
@@ -1450,7 +1629,8 @@ const questionBank = {
                     "Dynamic import cannot load components",
                     "React.lazy only works in class components"
                 ],
-                answer: "React.lazy integrates with Suspense for fallback UI, plain dynamic import does not"
+                answer: "React.lazy integrates with Suspense for fallback UI, plain dynamic import does not",
+                category: "react"
             },
             {
                 question: "What is the main purpose of React’s `startTransition` API?",
@@ -1460,7 +1640,8 @@ const questionBank = {
                     "Suspends updates immediately",
                     "Prevents re-renders"
                 ],
-                answer: "Marks state updates as low priority to avoid blocking UI"
+                answer: "Marks state updates as low priority to avoid blocking UI",
+                category: "react"
             }
         ]
     },
@@ -1474,7 +1655,8 @@ const questionBank = {
                     "Debug Regularly Yourself",
                     "Deploy Rapidly Yourself"
                 ],
-                answer: "Don't Repeat Yourself"
+                answer: "Don't Repeat Yourself",
+                category: "principles"
             },
             {
                 question: "Which principle suggests keeping a function or module focused on one task?",
@@ -1484,7 +1666,8 @@ const questionBank = {
                     "KISS Principle",
                     "Dependency Inversion"
                 ],
-                answer: "Single Responsibility Principle"
+                answer: "Single Responsibility Principle",
+                category: "principles"
             },
             {
                 question: "What does KISS stand for in software engineering?",
@@ -1494,7 +1677,8 @@ const questionBank = {
                     "Keep It Secure and Safe",
                     "Keep It Strictly Structured"
                 ],
-                answer: "Keep It Simple, Stupid"
+                answer: "Keep It Simple, Stupid",
+                category: "principles"
             },
             {
                 question: "Which of these is NOT part of the SOLID principles?",
@@ -1504,7 +1688,8 @@ const questionBank = {
                     "Interface Segregation Principle",
                     "Liskov Substitution Principle"
                 ],
-                answer: "Dependency Injection Principle"
+                answer: "Dependency Injection Principle",
+                category: "principles"
             },
             {
                 question: "What does YAGNI stand for?",
@@ -1514,7 +1699,8 @@ const questionBank = {
                     "Your Application Gets New Integrations",
                     "You Are Great, No Issues"
                 ],
-                answer: "You Aren’t Gonna Need It"
+                answer: "You Aren’t Gonna Need It",
+                category: "principles"
             },
             {
                 question: "Which principle advises against adding features before they are needed?",
@@ -1524,7 +1710,8 @@ const questionBank = {
                     "KISS",
                     "Open/Closed"
                 ],
-                answer: "YAGNI"
+                answer: "YAGNI",
+                category: "principles"
             },
             {
                 question: "What is the goal of the Open/Closed Principle?",
@@ -1534,7 +1721,8 @@ const questionBank = {
                     "Code should be closed for public use",
                     "Classes should be easy to modify directly"
                 ],
-                answer: "Software entities should be open for extension but closed for modification"
+                answer: "Software entities should be open for extension but closed for modification",
+                category: "principles"
             },
             {
                 question: "Which principle promotes writing code that can be reused in different contexts?",
@@ -1544,7 +1732,8 @@ const questionBank = {
                     "DRY",
                     "Coupling"
                 ],
-                answer: "Reusability"
+                answer: "Reusability",
+                category: "principles"
             },
             {
                 question: "What does 'high cohesion' in code mean?",
@@ -1554,7 +1743,8 @@ const questionBank = {
                     "Functions have multiple unrelated purposes",
                     "The code is very tightly coupled"
                 ],
-                answer: "Related tasks are kept together in the same module"
+                answer: "Related tasks are kept together in the same module",
+                category: "principles"
             },
             {
                 question: "What is 'loose coupling'?",
@@ -1564,7 +1754,8 @@ const questionBank = {
                     "Combining multiple classes into one",
                     "Removing all functions from modules"
                 ],
-                answer: "Reducing dependencies between modules"
+                answer: "Reducing dependencies between modules",
+                category: "principles"
             },
             {
                 question: "Which principle focuses on writing code that is easy to understand and maintain?",
@@ -1574,7 +1765,8 @@ const questionBank = {
                     "Liskov Substitution",
                     "Interface Segregation"
                 ],
-                answer: "Clean Code"
+                answer: "Clean Code",
+                category: "principles"
             },
             {
                 question: "What is 'code refactoring'?",
@@ -1584,7 +1776,8 @@ const questionBank = {
                     "Adding new features to the code",
                     "Fixing only syntax errors"
                 ],
-                answer: "Improving the structure of code without changing its behavior"
+                answer: "Improving the structure of code without changing its behavior",
+                category: "principles"
             },
             {
                 question: "Which SOLID principle deals with replacing objects with subtypes without affecting correctness?",
@@ -1594,7 +1787,8 @@ const questionBank = {
                     "Interface Segregation Principle",
                     "Dependency Inversion Principle"
                 ],
-                answer: "Liskov Substitution Principle"
+                answer: "Liskov Substitution Principle",
+                category: "principles"
             },
             {
                 question: "What is the main purpose of version control systems like Git?",
@@ -1604,7 +1798,8 @@ const questionBank = {
                     "To test applications",
                     "To compile code faster"
                 ],
-                answer: "To track and manage changes in code"
+                answer: "To track and manage changes in code",
+                category: "principles"
             },
             {
                 question: "Which principle suggests that modules should depend on abstractions rather than concrete implementations?",
@@ -1614,7 +1809,8 @@ const questionBank = {
                     "KISS Principle",
                     "DRY Principle"
                 ],
-                answer: "Dependency Inversion Principle"
+                answer: "Dependency Inversion Principle",
+                category: "principles"
             },
             {
                 question: "What is the purpose of unit testing?",
@@ -1624,7 +1820,8 @@ const questionBank = {
                     "To optimize code performance",
                     "To deploy the application"
                 ],
-                answer: "To verify that individual pieces of code work as expected"
+                answer: "To verify that individual pieces of code work as expected",
+                category: "principles"
             },
             {
                 question: "What does 'technical debt' refer to?",
@@ -1634,7 +1831,8 @@ const questionBank = {
                     "Unpaid developer salaries",
                     "The total cost of hardware for the project"
                 ],
-                answer: "The future cost of fixing shortcuts or poor code decisions"
+                answer: "The future cost of fixing shortcuts or poor code decisions",
+                category: "principles"
             },
             {
                 question: "Which of the following helps prevent bugs and makes code easier to change?",
@@ -1644,7 +1842,8 @@ const questionBank = {
                     "Skipping code reviews",
                     "Writing complex one-liners"
                 ],
-                answer: "Writing automated tests"
+                answer: "Writing automated tests",
+                category: "principles"
             },
             {
                 question: "What does 'readable code' mean?",
@@ -1654,7 +1853,8 @@ const questionBank = {
                     "Code with no comments",
                     "Code that runs faster"
                 ],
-                answer: "Code that is easy to understand for humans"
+                answer: "Code that is easy to understand for humans",
+                category: "principles"
             },
             {
                 question: "Why is documentation important in software development?",
@@ -1664,7 +1864,8 @@ const questionBank = {
                     "It replaces the need for comments",
                     "It makes the code run without bugs"
                 ],
-                answer: "It helps developers understand and maintain the code"
+                answer: "It helps developers understand and maintain the code",
+                category: "principles"
             }
         ],
         mid: [
@@ -1676,7 +1877,8 @@ const questionBank = {
                     "Structure, Object, Logic, Interface, Design",
                     "None of the above"
                 ],
-                answer: "Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion"
+                answer: "Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion",
+                category: "principles"
             },
             {
                 question: "What is the primary benefit of using the Single Responsibility Principle?",
@@ -1686,7 +1888,8 @@ const questionBank = {
                     "It reduces memory usage",
                     "It ensures all classes inherit from a base class"
                 ],
-                answer: "It makes classes easier to understand and maintain"
+                answer: "It makes classes easier to understand and maintain",
+                category: "principles"
             },
             {
                 question: "What does the Open/Closed Principle state?",
@@ -1696,7 +1899,8 @@ const questionBank = {
                     "Modules should never be extended",
                     "Code should be rewritten frequently"
                 ],
-                answer: "Software entities should be open for extension but closed for modification"
+                answer: "Software entities should be open for extension but closed for modification",
+                category: "principles"
             },
             {
                 question: "Which principle is violated if a subclass cannot be used interchangeably with its parent class?",
@@ -1706,7 +1910,8 @@ const questionBank = {
                     "Interface Segregation Principle",
                     "Single Responsibility Principle"
                 ],
-                answer: "Liskov Substitution Principle"
+                answer: "Liskov Substitution Principle",
+                category: "principles"
             },
             {
                 question: "What is the main idea behind Interface Segregation Principle?",
@@ -1716,7 +1921,8 @@ const questionBank = {
                     "Interfaces should be abstract",
                     "Interfaces should be sealed"
                 ],
-                answer: "Clients should not be forced to depend on interfaces they do not use"
+                answer: "Clients should not be forced to depend on interfaces they do not use",
+                category: "principles"
             },
             {
                 question: "What does Dependency Inversion Principle emphasize?",
@@ -1726,7 +1932,8 @@ const questionBank = {
                     "Classes should avoid interfaces",
                     "Dependencies should be hard-coded"
                 ],
-                answer: "High-level modules should not depend on low-level modules; both should depend on abstractions"
+                answer: "High-level modules should not depend on low-level modules; both should depend on abstractions",
+                category: "principles"
             },
             {
                 question: "What is coupling in software design?",
@@ -1736,7 +1943,8 @@ const questionBank = {
                     "Size of the codebase",
                     "Frequency of code comments"
                 ],
-                answer: "Degree of interdependence between software modules"
+                answer: "Degree of interdependence between software modules",
+                category: "principles"
             },
             {
                 question: "What is cohesion in software design?",
@@ -1746,17 +1954,20 @@ const questionBank = {
                     "Amount of duplicate code",
                     "Number of dependencies"
                 ],
-                answer: "Degree to which elements of a module belong together"
+                answer: "Degree to which elements of a module belong together",
+                category: "principles"
             },
             {
                 question: "Which design pattern is used to provide a simplified interface to a complex system?",
                 options: ["Facade", "Decorator", "Singleton", "Observer"],
-                answer: "Facade"
+                answer: "Facade",
+                category: "principles"
             },
             {
                 question: "Which principle encourages writing small functions that do one thing?",
                 options: ["Single Responsibility Principle", "Open/Closed Principle", "Liskov Principle", "DRY Principle"],
-                answer: "Single Responsibility Principle"
+                answer: "Single Responsibility Principle",
+                category: "principles"
             },
             {
                 question: "What does DRY stand for?",
@@ -1766,7 +1977,8 @@ const questionBank = {
                     "Data Redundancy Yield",
                     "Design Rules Yet"
                 ],
-                answer: "Don't Repeat Yourself"
+                answer: "Don't Repeat Yourself",
+                category: "principles"
             },
             {
                 question: "What is the KISS principle?",
@@ -1776,7 +1988,8 @@ const questionBank = {
                     "Key Interface Security Standards",
                     "Keep Iterating Simple Syntax"
                 ],
-                answer: "Keep It Simple, Stupid"
+                answer: "Keep It Simple, Stupid",
+                category: "principles"
             },
             {
                 question: "What does YAGNI stand for in agile development?",
@@ -1786,7 +1999,8 @@ const questionBank = {
                     "Your Application Gets New Interfaces",
                     "You Always Get New Iterations"
                 ],
-                answer: "You Aren’t Gonna Need It"
+                answer: "You Aren’t Gonna Need It",
+                category: "principles"
             },
             {
                 question: "Which principle suggests that code should be written to be easily changed without breaking existing functionality?",
@@ -1796,7 +2010,8 @@ const questionBank = {
                     "Liskov Substitution Principle",
                     "Interface Segregation Principle"
                 ],
-                answer: "Open/Closed Principle"
+                answer: "Open/Closed Principle",
+                category: "principles"
             },
             {
                 question: "What is the main purpose of the Law of Demeter?",
@@ -1806,7 +2021,8 @@ const questionBank = {
                     "Avoid deep inheritance",
                     "Guarantee immutability"
                 ],
-                answer: "Minimize knowledge of other modules, promoting loose coupling"
+                answer: "Minimize knowledge of other modules, promoting loose coupling",
+                category: "principles"
             },
             {
                 question: "What is the difference between high coupling and low coupling?",
@@ -1816,12 +2032,14 @@ const questionBank = {
                     "Low coupling increases complexity",
                     "Coupling refers to memory usage"
                 ],
-                answer: "High coupling means modules are highly dependent; low coupling means modules are independent"
+                answer: "High coupling means modules are highly dependent; low coupling means modules are independent",
+                category: "principles"
             },
             {
                 question: "Which principle emphasizes writing code that is easy to understand and maintain?",
                 options: ["Clean Code", "KISS", "YAGNI", "DRY"],
-                answer: "Clean Code"
+                answer: "Clean Code",
+                category: "principles"
             },
             {
                 question: "What is the main idea of the Composition over Inheritance principle?",
@@ -1831,7 +2049,8 @@ const questionBank = {
                     "Composition should be avoided",
                     "It is only applicable in functional programming"
                 ],
-                answer: "Favor combining small, reusable components rather than deep inheritance hierarchies"
+                answer: "Favor combining small, reusable components rather than deep inheritance hierarchies",
+                category: "principles"
             },
             {
                 question: "What is the SOLID principle most closely associated with reducing code fragility?",
@@ -1841,7 +2060,8 @@ const questionBank = {
                     "Dependency Inversion Principle",
                     "Interface Segregation Principle"
                 ],
-                answer: "Open/Closed Principle"
+                answer: "Open/Closed Principle",
+                category: "principles"
             },
             {
                 question: "Which principle helps prevent tight coupling and improves modularity?",
@@ -1851,7 +2071,8 @@ const questionBank = {
                     "KISS",
                     "YAGNI"
                 ],
-                answer: "Dependency Inversion Principle"
+                answer: "Dependency Inversion Principle",
+                category: "principles"
             }
         ],
         senior: [
@@ -1863,7 +2084,8 @@ const questionBank = {
                     "A subclass uses private methods",
                     "A subclass has more properties"
                 ],
-                answer: "A subclass changes expected behavior of the parent class"
+                answer: "A subclass changes expected behavior of the parent class",
+                category: "principles"
             },
             {
                 question: "In terms of software architecture, what is the primary risk of tight coupling?",
@@ -1873,12 +2095,14 @@ const questionBank = {
                     "It simplifies testing",
                     "It increases readability"
                 ],
-                answer: "Changes in one module can propagate and break others"
+                answer: "Changes in one module can propagate and break others",
+                category: "principles"
             },
             {
                 question: "Which design pattern is best suited for decoupling an abstraction from its implementation?",
                 options: ["Bridge", "Decorator", "Factory Method", "Singleton"],
-                answer: "Bridge"
+                answer: "Bridge",
+                category: "principles"
             },
             {
                 question: "What is a common problem with deep inheritance hierarchies?",
@@ -1888,7 +2112,8 @@ const questionBank = {
                     "They reduce memory usage",
                     "They prevent polymorphism"
                 ],
-                answer: "They are hard to maintain and prone to fragility"
+                answer: "They are hard to maintain and prone to fragility",
+                category: "principles"
             },
             {
                 question: "What is the main purpose of the Dependency Injection pattern?",
@@ -1898,7 +2123,8 @@ const questionBank = {
                     "To create singletons automatically",
                     "To replace inheritance"
                 ],
-                answer: "To invert control of dependencies for better modularity and testability"
+                answer: "To invert control of dependencies for better modularity and testability",
+                category: "principles"
             },
             {
                 question: "Which principle is most directly related to writing code that is resilient to changes in other modules?",
@@ -1908,7 +2134,8 @@ const questionBank = {
                     "YAGNI",
                     "DRY"
                 ],
-                answer: "Open/Closed Principle"
+                answer: "Open/Closed Principle",
+                category: "principles"
             },
             {
                 question: "What is the main advantage of programming to an interface rather than an implementation?",
@@ -1918,7 +2145,8 @@ const questionBank = {
                     "It enforces inheritance",
                     "It avoids using abstract classes"
                 ],
-                answer: "It reduces coupling and allows easier substitution"
+                answer: "It reduces coupling and allows easier substitution",
+                category: "principles"
             },
             {
                 question: "Which principle is violated when a module knows too much about other modules’ internal structures?",
@@ -1928,7 +2156,8 @@ const questionBank = {
                     "Dependency Inversion Principle",
                     "DRY"
                 ],
-                answer: "Law of Demeter"
+                answer: "Law of Demeter",
+                category: "principles"
             },
             {
                 question: "What is the difference between functional cohesion and sequential cohesion?",
@@ -1938,7 +2167,8 @@ const questionBank = {
                     "Functional cohesion increases coupling",
                     "They are identical"
                 ],
-                answer: "Functional cohesion performs a single well-defined task; sequential cohesion performs tasks where output of one is input to another"
+                answer: "Functional cohesion performs a single well-defined task; sequential cohesion performs tasks where output of one is input to another",
+                category: "principles"
             },
             {
                 question: "What is the primary goal of using SOLID principles together?",
@@ -1948,7 +2178,8 @@ const questionBank = {
                     "Minimize memory usage",
                     "Enforce strict typing"
                 ],
-                answer: "Create maintainable, flexible, and scalable software"
+                answer: "Create maintainable, flexible, and scalable software",
+                category: "principles"
             },
             {
                 question: "Which principle is most relevant when designing microservices?",
@@ -1958,12 +2189,14 @@ const questionBank = {
                     "Open/Closed Principle",
                     "Interface Segregation Principle"
                 ],
-                answer: "Single Responsibility Principle"
+                answer: "Single Responsibility Principle",
+                category: "principles"
             },
             {
                 question: "Which design pattern is best for managing object creation when instantiation is expensive?",
                 options: ["Factory", "Singleton", "Prototype", "Observer"],
-                answer: "Prototype"
+                answer: "Prototype",
+                category: "principles"
             },
             {
                 question: "How does Interface Segregation Principle affect API design?",
@@ -1973,7 +2206,8 @@ const questionBank = {
                     "APIs should never be versioned",
                     "APIs must use inheritance"
                 ],
-                answer: "APIs should provide small, specific interfaces to avoid forcing clients to implement unused methods"
+                answer: "APIs should provide small, specific interfaces to avoid forcing clients to implement unused methods",
+                category: "principles"
             },
             {
                 question: "What is the main reason to favor composition over inheritance?",
@@ -1983,7 +2217,8 @@ const questionBank = {
                     "Inheritance is easier to test",
                     "Composition avoids polymorphism"
                 ],
-                answer: "Composition increases flexibility and reduces tight coupling"
+                answer: "Composition increases flexibility and reduces tight coupling",
+                category: "principles"
             },
             {
                 question: "Which principle helps prevent fragile base class problems?",
@@ -1993,7 +2228,8 @@ const questionBank = {
                     "Dependency Inversion Principle",
                     "YAGNI"
                 ],
-                answer: "Liskov Substitution Principle"
+                answer: "Liskov Substitution Principle",
+                category: "principles"
             },
             {
                 question: "What is the main trade-off of following strict SOLID principles?",
@@ -2003,7 +2239,8 @@ const questionBank = {
                     "Memory usage increases drastically",
                     "They eliminate all bugs"
                 ],
-                answer: "More classes and abstractions may increase complexity"
+                answer: "More classes and abstractions may increase complexity",
+                category: "principles"
             },
             {
                 question: "Which principle ensures that modules or classes can evolve independently without breaking clients?",
@@ -2013,7 +2250,8 @@ const questionBank = {
                     "KISS",
                     "DRY"
                 ],
-                answer: "Open/Closed Principle"
+                answer: "Open/Closed Principle",
+                category: "principles"
             },
             {
                 question: "What is the primary purpose of the Observer pattern?",
@@ -2023,7 +2261,8 @@ const questionBank = {
                     "Create objects on demand",
                     "Replace inheritance"
                 ],
-                answer: "Allow objects to be notified of state changes in other objects without tight coupling"
+                answer: "Allow objects to be notified of state changes in other objects without tight coupling",
+                category: "principles"
             },
             {
                 question: "How does the Principle of Least Knowledge reduce system fragility?",
@@ -2033,7 +2272,8 @@ const questionBank = {
                     "By eliminating the need for interfaces",
                     "By using inheritance extensively"
                 ],
-                answer: "By restricting each module’s knowledge about others to a minimum"
+                answer: "By restricting each module’s knowledge about others to a minimum",
+                category: "principles"
             },
             {
                 question: "Which principle is most directly associated with maintainable dependency management in software?",
@@ -2043,7 +2283,8 @@ const questionBank = {
                     "DRY",
                     "Single Responsibility Principle"
                 ],
-                answer: "Dependency Inversion Principle"
+                answer: "Dependency Inversion Principle",
+                category: "principles"
 
             }]
     }
