@@ -4,6 +4,7 @@ import Login from './components/Login';
 import LevelSelect from './components/LevelSelect';
 import QuestionStepper from './components/QuestionStepper';
 import QuestionCard from './components/QuestionCard';
+import Results from './components/Results';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/level" element={<LevelSelect />} />
         <Route path="/stepper" element={<QuestionStepper />} />
         <Route path="/interview" element={<QuestionCard />} />
+        <Route path="/results" element={<Results />} />
       </Routes>
     </Layout>
   );
