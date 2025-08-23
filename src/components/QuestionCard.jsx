@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from 'react-router-dom';
 import {
     setAnswer,
     nextQuestion,
@@ -8,6 +9,7 @@ import {
     finishInterview,
 } from "../redux/interviewSlice";
 import "../styles/QuestionCard.css"
+
 
 const categoryColors = {
     css: "#136DB0",
@@ -18,6 +20,7 @@ const categoryColors = {
 
 const QuestionCard = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const { questions, currentIndex, answers, status } = useSelector(
         (state) => state.interview
     );
@@ -36,9 +39,11 @@ const QuestionCard = () => {
     const handleNext = () => {
         if (currentIndex === questions.length - 1) {
             dispatch(finishInterview());
+            navigate('/results');
         } else {
             dispatch(nextQuestion());
         }
+
     };
 
     const handlePrev = () => {
