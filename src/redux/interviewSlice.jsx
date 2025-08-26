@@ -60,7 +60,10 @@ const interviewSlice = createSlice({
                 state.currentIndex -= 1;
             }
         },
-
+        setLevel: (state, action) => {
+            const level = action.payload;
+            state.level = level.charAt(0).toUpperCase() + level.slice(1);
+        },
         passQuestion: (state) => {
             state.currentIndex = Math.min(
                 state.currentIndex + 1,

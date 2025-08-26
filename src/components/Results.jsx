@@ -8,7 +8,7 @@ const Results = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    const { score, total, categoryScores } = useSelector(
+    const { score, total, categoryScores, username, level } = useSelector(
         (state) => state.interview
     );
 
@@ -21,7 +21,10 @@ const Results = () => {
 
     return (
         <div className="result-container">
-            <h1 className="result-title">Interview Results</h1>
+            <h1 className="result-title">
+                Interview Results of{" "}
+                <span className="highlight">{username || "Guest"}</span>
+            </h1>
 
             <p className="result-text">
                 Score: <span className="highlight">{score}</span> / {total}
@@ -30,7 +33,15 @@ const Results = () => {
             <p className="result-percentage">{percentage}%</p>
 
             <div className="result-breakdown">
-                <h2 className="breakdown-title">Category Breakdown:</h2>
+                <h2 className="breakdown-title">
+                    Category Breakdown of{" "}
+                    <span className="highlight">
+                        {level
+                            ? `${level.charAt(0).toUpperCase() + level.slice(1)} Level`
+                            : "N/A"}
+                    </span>
+                    :
+                </h2>
                 <ul className="breakdown-list">
                     {Object.entries(categoryScores).map(
                         ([category, { correct, total }]) => (
@@ -55,4 +66,3 @@ const Results = () => {
 };
 
 export default Results;
-

@@ -59,7 +59,11 @@
   margin-bottom: 8px;
 }
 
-.breakdown-category {
+.breakdown-list .breakdown-item:first-child .breakdown-category {
+  text-transform: uppercase;
+}
+
+.breakdown-list .breakdown-item:not(:first-child) .breakdown-category {
   text-transform: capitalize;
 }
 
