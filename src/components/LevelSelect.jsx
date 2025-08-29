@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { setLevel } from '../redux/interviewSlice';
 import '../styles/LevelSelect.css';
 
 const levels = ['Junior', 'Mid', 'Senior'];
@@ -7,10 +9,19 @@ const levels = ['Junior', 'Mid', 'Senior'];
 const LevelSelect = () => {
     const [selectedLevel, setSelectedLevel] = useState('');
     const navigate = useNavigate();
+    const dispatch = useDispatch();
 
     const handleNext = () => {
-        if (!selectedLevel) return alert('Please select a level.');
-        navigate('/stepper', { state: { level: selectedLevel } });
+        if (!selectedLevel) {
+            alert('Please select a level.');
+            return;
+        }
+
+
+        dispatch(setLevel(selectedLevel));
+
+
+        navigate('/stepper');
     };
 
     return (
@@ -18,7 +29,7 @@ const LevelSelect = () => {
             <h2 className="level-title">Select Your Level</h2>
 
             <div className="level-options">
-                {levels.map(level => (
+                {levels.map((level) => (
                     <button
                         key={level}
                         className={`level-btn ${selectedLevel === level ? 'selected' : ''}`}

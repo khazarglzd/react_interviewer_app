@@ -37,7 +37,7 @@ const Results = () => {
                     Category Breakdown of{" "}
                     <span className="highlight">
                         {level
-                            ? `${level.charAt(0).toUpperCase() + level.slice(1)} Level`
+                            ? level.charAt(0).toUpperCase() + level.slice(1)
                             : "N/A"}
                     </span>
                     :

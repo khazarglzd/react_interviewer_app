@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { startInterview } from '../redux/interviewSlice';
 import '../styles/QuestionStepper.css';
@@ -7,6 +7,12 @@ import '../styles/QuestionStepper.css';
 const MAX_TOTAL = 20;
 
 const QuestionStepper = () => {
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+
+    const { level } = useSelector((state) => state.interview);
+
     const [counts, setCounts] = useState({
         css: 5,
         javascript: 5,
@@ -14,10 +20,12 @@ const QuestionStepper = () => {
         principles: 5,
     });
 
-    const dispatch = useDispatch();
-    const navigate = useNavigate();
-
     const total = Object.values(counts).reduce((a, b) => a + b, 0);
+
+
+    useEffect(() => {
+        if (!level) navigate('/');
+    }, [level, navigate]);
 
     const handleChange = (key, value) => {
         if (value < 0 || value > 20) return;
@@ -30,7 +38,13 @@ const QuestionStepper = () => {
     };
 
     const handleStart = () => {
-        dispatch(startInterview({ level: "junior", counts }));
+        if (!level) {
+            alert('Please select a level first.');
+            return;
+        }
+
+
+        dispatch(startInterview({ level, counts }));
         navigate('/interview');
     };
 

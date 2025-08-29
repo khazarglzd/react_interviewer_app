@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import questionBank from "../data/questionsBank";
 
 const initialState = {
+    username: "",
     questions: [],
     currentIndex: 0,
     answers: {},
@@ -17,6 +18,10 @@ const interviewSlice = createSlice({
     name: "interview",
     initialState,
     reducers: {
+        setUsername: (state, action) => {
+            state.username = action.payload;
+        },
+
         startInterview: (state, action) => {
             const { level, counts } = action.payload;
 
@@ -35,7 +40,6 @@ const interviewSlice = createSlice({
                 const allQuestions = questionBank[category]?.[level] || [];
                 const chosen = allQuestions.slice(0, count);
                 selected = [...selected, ...chosen];
-
 
                 state.categoryScores[category] = { correct: 0, total: count };
             });
@@ -60,10 +64,12 @@ const interviewSlice = createSlice({
                 state.currentIndex -= 1;
             }
         },
+
         setLevel: (state, action) => {
-            const level = action.payload;
-            state.level = level.charAt(0).toUpperCase() + level.slice(1);
+            const level = action.payload.toLowerCase();
+            state.level = level;
         },
+
         passQuestion: (state) => {
             state.currentIndex = Math.min(
                 state.currentIndex + 1,
@@ -75,11 +81,9 @@ const interviewSlice = createSlice({
             state.status = "finished";
             let score = 0;
 
-
             Object.keys(state.categoryScores).forEach((cat) => {
                 state.categoryScores[cat].correct = 0;
             });
-
 
             state.questions.forEach((q, idx) => {
                 const userAnswer = state.answers[idx];
@@ -99,10 +103,12 @@ const interviewSlice = createSlice({
 });
 
 export const {
+    setUsername,
     startInterview,
     setAnswer,
     nextQuestion,
     prevQuestion,
+    setLevel,
     passQuestion,
     finishInterview,
     resetInterview,
