@@ -5,6 +5,7 @@ import LevelSelect from './components/LevelSelect';
 import QuestionStepper from './components/QuestionStepper';
 import QuestionCard from './components/QuestionCard';
 import Results from './components/Results';
+import Statistics from './components/Statistics';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/stepper" element={<QuestionStepper />} />
         <Route path="/interview" element={<QuestionCard />} />
         <Route path="/results" element={<Results />} />
+        <Route path="/statistics" element={<Statistics />} />
       </Routes>
     </Layout>
   );

@@ -18,6 +18,9 @@ const Results = () => {
         dispatch(resetInterview());
         navigate("/");
     };
+    const goToStatistics = () => {
+        navigate("/statistics");
+    };
 
     return (
         <div className="result-container">
@@ -60,6 +63,9 @@ const Results = () => {
 
             <button onClick={handleRestart} className="result-btn">
                 Start Again
+            </button>
+            <button onClick={goToStatistics} className="statistics-btn">
+                Statistics
             </button>
         </div>
     );
